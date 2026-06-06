@@ -46,7 +46,7 @@ def handle_state(state, now, calibrated):
         prev_state = "DROWSY"
         return
 
-    # 🔥 normal cooldown
+    # normal cooldown
     if now - last_alerts[stable_state] > COOLDOWN:
         speak(stable_state)
         last_alerts[stable_state] = now
