@@ -43,7 +43,7 @@ def get_head(lm, baseline, prev_down=False):
     if baseline is None:
         return False, diff
 
-    # 🔥 hysteresis (stable detection)
+    # hysteresis (stable detection)
     enter = baseline + 0.08
     exit_  = baseline + 0.05
 
